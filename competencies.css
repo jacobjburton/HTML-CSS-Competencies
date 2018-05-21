@@ -1,0 +1,101 @@
+.div1
+{
+    background-color: blue;
+    color: white;
+    /* 24D */
+    border: 2px solid black;
+    /* 24E */
+    padding: 10px;
+    width: 100%;
+}
+
+*
+{
+    /* 24F */
+    box-sizing: border-box;
+}
+
+.box-sizing-parent
+{
+    width: 100%;
+    border: 10px solid green;
+    height: 200px;
+}
+
+.box-sizing-child
+{
+    width: 50%;
+    border: 5px solid red;
+    /* 25D */
+    float: left;
+    height: 100%;
+}
+
+
+article
+{
+    background-color: lightcoral;
+    width: 20%;
+}
+
+section
+{
+    background-color: orange;
+    width: 100%;
+    /* 25F */
+    display: flex;
+    /* 23F */
+    background-image: url("https://i5.walmartimages.ca/images/Large/580/6_r/875806_R.jpg?odnBound=460");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.bythebaby
+{
+    /* 23D-1 */
+    font-weight: bold;
+    /* 23D-2 */
+    color: red;
+    /* 23D-3 */
+    font-size: 26px;
+    /* 23E */
+    background-color: yellow; 
+    
+}
+
+footer
+{
+    /* 24C */
+    margin-top: 10px;
+    background-color: grey;
+    width: 90vw;
+}
+
+.position
+{
+    background-color: black;
+    color: white;    
+}
+
+.position1
+{
+    /* 25C-2 */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.position2
+{
+    /* 25C-1 */
+    position: relative;
+    left: 1000px;
+}
+
+.position3
+{
+    /* 25C-3 */
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+}
