@@ -1,3 +1,5 @@
+
+/* 22C-2 */
 .div1
 {
     background-color: blue;
@@ -7,6 +9,24 @@
     /* 24E */
     padding: 10px;
     width: 100%;
+    /* 30C */
+    box-shadow: 10px 10px 10px red;
+    /* 30D */
+    background: linear-gradient(to right, red , green);
+    
+}
+
+/* 22C-4 */
+div > p
+{
+    background-color: black;
+    color: red;
+}
+
+/* 22C-3 */
+#quote
+{
+    quotes: "//" "//";
 }
 
 *
@@ -15,11 +35,17 @@
     box-sizing: border-box;
 }
 
+
+
 .box-sizing-parent
 {
     width: 100%;
     border: 10px solid green;
-    height: 200px;
+    background-image: url("https://img00.deviantart.net/8e1a/i/2011/351/5/d/wolf_howling_at_the_moon_by_joaanadarc-d4jcy79.jpg");
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
 }
 
 .box-sizing-child
@@ -29,13 +55,44 @@
     /* 25D */
     float: left;
     height: 100%;
+    color: white;
+    font-size: 80px;
+    
 }
 
+.child1
+{
+    /* 30E */
+    text-shadow: 5px 5px 5px red;
+}
 
 article
 {
+
     background-color: lightcoral;
     width: 20%;
+    /* 28E */
+    transform: rotate(40deg);
+    /* float: right; */
+    margin: auto;
+    /* 28D */
+    transition: width 2s;
+    transition-timing-function: ease;
+    animation-name: colorChange;
+    animation-duration: 10s;
+}
+
+/* 28C */
+@keyframes colorChange
+{
+    from {background-color: lightcoral;}
+    to {background-color: yellow;}
+}
+
+article:hover
+{
+    transform: rotate(0deg);
+    width: 30%;
 }
 
 section
@@ -45,9 +102,7 @@ section
     /* 25F */
     display: flex;
     /* 23F */
-    background-image: url("https://i5.walmartimages.ca/images/Large/580/6_r/875806_R.jpg?odnBound=460");
-    background-repeat: no-repeat;
-    background-position: left;
+    
 }
 
 .bythebaby
@@ -77,11 +132,12 @@ footer
     color: white;    
 }
 
-.position1
+/* 22C-5 */
+div + p
 {
     /* 25C-2 */
     position: absolute;
-    left: 0;
+    left: 10px;
     top: 0;
 }
 
@@ -90,12 +146,14 @@ footer
     /* 25C-1 */
     position: relative;
     left: 1000px;
+    width: 20%;
 }
 
-.position3
+/* 22C-1 */
+#position3
 {
     /* 25C-3 */
     position: fixed;
-    left: 10px;
-    bottom: 10px;
+    left: 50%;
+    bottom: 50%;
 }
